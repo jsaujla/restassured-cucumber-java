@@ -85,8 +85,8 @@ public class RequestBase {
         PrintStream errorLogFile = null;
         try {
             String threadName = Thread.currentThread().getName();
-            logFile = new PrintStream("target/restassured-logs/request-response-all-" + threadName + "log");
-            errorLogFile = new PrintStream("target/restassured-logs/error-" + threadName + "log");
+            logFile = new PrintStream("target/request-response-all-" + threadName + "log");
+            errorLogFile = new PrintStream("target/error-" + threadName + "log");
         } catch (FileNotFoundException e) {
             LOGGER.error("Failed to create restassured log files under target folder", e);
             e.printStackTrace();

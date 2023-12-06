@@ -1,7 +1,5 @@
 package com.spotify.steps;
 
-import com.spotify.constant.Constants;
-import commons.properties.PropertiesManager;
 import com.spotify.config.ConfigLoader;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;

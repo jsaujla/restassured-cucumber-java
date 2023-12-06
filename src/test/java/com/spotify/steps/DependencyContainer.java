@@ -1,19 +1,13 @@
 package com.spotify.steps;
 
 import commons.restbase.ResponseBase;
-import commons.properties.PropertiesManager;
 import io.restassured.response.Response;
 import commons.restbase.RequestBase;
 
 /**
- * This class is used to store shared object instances and make them available to Hooks, PageInitializer and Steps classes.
+ * This class is used to store shared object instances and make them available to Hooks and Steps classes.
  */
 public class DependencyContainer {
-
-    /**
-     * The instance of PropertiesManager class used to access and manage test configuration properties.
-     */
-    protected PropertiesManager propertiesManager;
 
     /**
      * The instance of RequestBase class used to manage request specifications.

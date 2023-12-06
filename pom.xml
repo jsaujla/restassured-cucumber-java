@@ -13,6 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <restassured.version>4.3.3</restassured.version>
         <jacksondatabind.version>2.12.1</jacksondatabind.version>
+        <jsonschemavalidator.version>5.3.2</jsonschemavalidator.version>
         <lombok.version>1.18.30</lombok.version>
         <cucumber.version>7.12.0</cucumber.version>
         <testng.version>7.7.1</testng.version>
@@ -34,18 +35,11 @@
             <artifactId>jackson-databind</artifactId>
             <version>${jacksondatabind.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.skyscreamer/jsonassert -->
-        <dependency>
-            <groupId>org.skyscreamer</groupId>
-            <artifactId>jsonassert</artifactId>
-            <version>1.5.0</version>
-            <scope>test</scope>
-        </dependency>
         <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>json-schema-validator</artifactId>
-            <version>5.3.2</version>
+            <version>${jsonschemavalidator.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
@@ -54,12 +48,6 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
-<!--        <dependency>-->
-<!--            <groupId>javax.annotation</groupId>-->
-<!--            <artifactId>javax.annotation-api</artifactId>-->
-<!--            <version>1.3.2</version>-->
-<!--        </dependency>-->
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
@@ -114,12 +102,6 @@
             <artifactId>slf4j-reload4j</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.github.adiralashiva8/testng-metrics -->
-<!--        <dependency>-->
-<!--            <groupId>com.github.adiralashiva8</groupId>-->
-<!--            <artifactId>testng-metrics</artifactId>-->
-<!--            <version>1.6</version>-->
-<!--        </dependency>-->
         <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
         <dependency>
             <groupId>org.assertj</groupId>
@@ -127,7 +109,6 @@
             <version>${assertj.version}</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -147,27 +128,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
                 <configuration>
-<!--                    <includes>-->
-<!--                        <include>**/*TestNgRunner.java</include>-->
-<!--                    </includes>-->
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-<!--                    <testFailureIgnore>true</testFailureIgnore>-->
                 </configuration>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-javadoc-plugin</artifactId>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <id>attach-javadocs</id>-->
-<!--                        <goals>-->
-<!--                            <goal>jar</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
         </plugins>
     </build>
 

@@ -7,14 +7,11 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.jackson.Jacksonized;
 
-import javax.annotation.Generated;
-
 @Getter
 @Setter
 @Jacksonized
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
-@Generated("jsonschema2pojo")
 public class ErrorRoot {
 
     @JsonProperty("error")
