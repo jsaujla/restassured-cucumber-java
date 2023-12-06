@@ -1,0 +1,175 @@
+2023-12-06 01:11:00,410 - com.spotify.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-12-06 01:11:00,413 - com.spotify.steps.Hooks -INFO - Scenario: Verify Playlists. User should be able to create, get and update a playlist
+2023-12-06 01:11:00,414 - com.spotify.config.ConfigLoader -INFO - Creating instance of ConfigLoader
+2023-12-06 01:11:00,414 - commons.properties.PropertiesManager -INFO - Constructing PropertiesManager with file path: '/home/runner/work/restassured-cucumber-java/restassured-cucumber-java/src/test/resources/config-qa.properties'
+2023-12-06 01:11:00,415 - commons.properties.PropertiesManager -INFO - Loading properties file
+2023-12-06 01:11:00,415 - commons.properties.PropertiesManager -INFO - Properties file '/home/runner/work/restassured-cucumber-java/restassured-cucumber-java/src/test/resources/config-qa.properties' loaded successfully
+2023-12-06 01:11:00,416 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:00,416 - commons.properties.PropertiesManager -INFO - Returning Property of 'api.base.uri' as string
+2023-12-06 01:11:00,416 - commons.restbase.RequestBase -INFO - Constructing RequestBase with baseUri: 'https://api.spotify.com/v1'
+2023-12-06 01:11:00,416 - commons.restbase.RequestBase -INFO - Creating RequestBuilder
+2023-12-06 01:11:00,994 - commons.restbase.ResponseBase -INFO - Constructing ResponseBase
+2023-12-06 01:11:00,995 - commons.restbase.ResponseBase -INFO - Creating ResponseSpecBuilder
+2023-12-06 01:11:00,996 - commons.restbase.ResponseBase -INFO - Returning ResponseSpecification
+2023-12-06 01:11:00,998 - com.spotify.steps.PlaylistsSteps -INFO - Constructing PlaylistsSteps
+2023-12-06 01:11:01,000 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:01,001 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'application/json'
+2023-12-06 01:11:01,001 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:01,001 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: '{access_token}'
+2023-12-06 01:11:01,002 - com.spotify.oauth.TokenManager -INFO - Renewing token
+2023-12-06 01:11:01,002 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:01,002 - commons.properties.PropertiesManager -INFO - Returning Property of 'client_id' as string
+2023-12-06 01:11:01,002 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:01,003 - commons.properties.PropertiesManager -INFO - Returning Property of 'client_secret' as string
+2023-12-06 01:11:01,003 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:01,003 - commons.properties.PropertiesManager -INFO - Returning Property of 'refresh_token' as string
+2023-12-06 01:11:01,003 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:01,004 - commons.properties.PropertiesManager -INFO - Returning Property of 'grant_type' as string
+2023-12-06 01:11:01,004 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:01,004 - commons.properties.PropertiesManager -INFO - Returning Property of 'accounts.base.uri' as string
+2023-12-06 01:11:01,004 - commons.restbase.RequestBase -INFO - Constructing RequestBase with baseUri: 'https://accounts.spotify.com'
+2023-12-06 01:11:01,007 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:01,023 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:01,034 - commons.restbase.ResponseBase -INFO - Constructing ResponseBase
+2023-12-06 01:11:01,034 - commons.restbase.ResponseBase -INFO - Creating ResponseSpecBuilder
+2023-12-06 01:11:01,035 - commons.restbase.ResponseBase -INFO - Returning ResponseSpecification
+2023-12-06 01:11:01,035 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:02,270 - com.spotify.oauth.TokenManager -INFO - Returning token
+2023-12-06 01:11:02,271 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:02,276 - com.spotify.steps.PojoInitializer -INFO - Returning Request Playlists object that represents the data in the JSON file 'src/test/resources/test-data/CreatePlaylists.json'
+2023-12-06 01:11:02,437 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:02,501 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:02,501 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'users/{{user_id}}/playlists'
+2023-12-06 01:11:02,501 - commons.properties.PropertiesManager -INFO - Returning Property of 'user_id' as string
+2023-12-06 01:11:02,502 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:02,846 - commons.restbase.RequestBase -INFO - Reset RequestSpecification
+2023-12-06 01:11:02,850 - com.spotify.steps.PojoInitializer -INFO - Returning Response Playlists object that represents the data in the response
+2023-12-06 01:11:03,625 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:03,625 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'application/json'
+2023-12-06 01:11:03,625 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:03,626 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: '{access_token}'
+2023-12-06 01:11:03,626 - com.spotify.oauth.TokenManager -INFO - Returning token
+2023-12-06 01:11:03,626 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:03,627 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:03,627 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'playlists/{playlist_id_from_post_request}'
+2023-12-06 01:11:03,628 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:03,856 - commons.restbase.RequestBase -INFO - Reset RequestSpecification
+2023-12-06 01:11:03,859 - com.spotify.steps.PojoInitializer -INFO - Returning Response Playlists object that represents the data in the response
+2023-12-06 01:11:03,864 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:03,864 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'application/json'
+2023-12-06 01:11:03,865 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:03,865 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: '{access_token}'
+2023-12-06 01:11:03,865 - com.spotify.oauth.TokenManager -INFO - Returning token
+2023-12-06 01:11:03,865 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:03,866 - com.spotify.steps.PojoInitializer -INFO - Returning Request Playlists object that represents the data in the JSON file 'src/test/resources/test-data/CreatePlaylists.json'
+2023-12-06 01:11:03,870 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:03,872 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:03,872 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'playlists/{playlist_id_from_post_request}'
+2023-12-06 01:11:03,872 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,138 - commons.restbase.RequestBase -INFO - Reset RequestSpecification
+2023-12-06 01:11:04,141 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,141 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'application/json'
+2023-12-06 01:11:04,141 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,141 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: '{access_token}'
+2023-12-06 01:11:04,141 - com.spotify.oauth.TokenManager -INFO - Returning token
+2023-12-06 01:11:04,142 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,146 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,146 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'playlists/{playlist_id_from_post_request}'
+2023-12-06 01:11:04,146 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,310 - commons.restbase.RequestBase -INFO - Reset RequestSpecification
+2023-12-06 01:11:04,313 - com.spotify.steps.PojoInitializer -INFO - Returning Response Playlists object that represents the data in the response
+2023-12-06 01:11:04,319 - com.spotify.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-12-06 01:11:04,329 - com.spotify.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-12-06 01:11:04,330 - com.spotify.steps.Hooks -INFO - Scenario: Verify create Playlists with invalid payload
+2023-12-06 01:11:04,330 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,330 - commons.properties.PropertiesManager -INFO - Returning Property of 'api.base.uri' as string
+2023-12-06 01:11:04,330 - commons.restbase.RequestBase -INFO - Constructing RequestBase with baseUri: 'https://api.spotify.com/v1'
+2023-12-06 01:11:04,331 - commons.restbase.ResponseBase -INFO - Constructing ResponseBase
+2023-12-06 01:11:04,331 - commons.restbase.ResponseBase -INFO - Creating ResponseSpecBuilder
+2023-12-06 01:11:04,332 - commons.restbase.ResponseBase -INFO - Returning ResponseSpecification
+2023-12-06 01:11:04,332 - com.spotify.steps.PlaylistsSteps -INFO - Constructing PlaylistsSteps
+2023-12-06 01:11:04,333 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,333 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'application/json'
+2023-12-06 01:11:04,333 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,333 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: '{access_token}'
+2023-12-06 01:11:04,333 - com.spotify.oauth.TokenManager -INFO - Returning token
+2023-12-06 01:11:04,333 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,336 - com.spotify.steps.PojoInitializer -INFO - Returning Request Playlists object that represents the data in the JSON file 'src/test/resources/test-data/CreatePlaylists.json'
+2023-12-06 01:11:04,342 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,344 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,344 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'users/{{user_id}}/playlists'
+2023-12-06 01:11:04,344 - commons.properties.PropertiesManager -INFO - Returning Property of 'user_id' as string
+2023-12-06 01:11:04,345 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,430 - commons.restbase.RequestBase -INFO - Reset RequestSpecification
+2023-12-06 01:11:04,433 - com.spotify.steps.PojoInitializer -INFO - Returning Response ErrorRoot object represents the data in the response
+2023-12-06 01:11:04,573 - com.spotify.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-12-06 01:11:04,579 - com.spotify.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-12-06 01:11:04,579 - com.spotify.steps.Hooks -INFO - Scenario: Verify create Playlists with invalid Access Token
+2023-12-06 01:11:04,579 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,579 - commons.properties.PropertiesManager -INFO - Returning Property of 'api.base.uri' as string
+2023-12-06 01:11:04,580 - commons.restbase.RequestBase -INFO - Constructing RequestBase with baseUri: 'https://api.spotify.com/v1'
+2023-12-06 01:11:04,583 - commons.restbase.ResponseBase -INFO - Constructing ResponseBase
+2023-12-06 01:11:04,583 - commons.restbase.ResponseBase -INFO - Creating ResponseSpecBuilder
+2023-12-06 01:11:04,583 - commons.restbase.ResponseBase -INFO - Returning ResponseSpecification
+2023-12-06 01:11:04,584 - com.spotify.steps.PlaylistsSteps -INFO - Constructing PlaylistsSteps
+2023-12-06 01:11:04,584 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,584 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'application/json'
+2023-12-06 01:11:04,585 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,585 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'Bearer invalid_access_token'
+2023-12-06 01:11:04,585 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,586 - com.spotify.steps.PojoInitializer -INFO - Returning Request Playlists object that represents the data in the JSON file 'src/test/resources/test-data/CreatePlaylists.json'
+2023-12-06 01:11:04,591 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,593 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,594 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'users/{{user_id}}/playlists'
+2023-12-06 01:11:04,594 - commons.properties.PropertiesManager -INFO - Returning Property of 'user_id' as string
+2023-12-06 01:11:04,594 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,651 - commons.restbase.RequestBase -INFO - Reset RequestSpecification
+2023-12-06 01:11:04,653 - com.spotify.steps.PojoInitializer -INFO - Returning Response ErrorRoot object represents the data in the response
+2023-12-06 01:11:04,655 - com.spotify.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-12-06 01:11:04,660 - com.spotify.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-12-06 01:11:04,660 - com.spotify.steps.Hooks -INFO - Scenario: Verify create Playlists with invalid Access Token
+2023-12-06 01:11:04,660 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,660 - commons.properties.PropertiesManager -INFO - Returning Property of 'api.base.uri' as string
+2023-12-06 01:11:04,660 - commons.restbase.RequestBase -INFO - Constructing RequestBase with baseUri: 'https://api.spotify.com/v1'
+2023-12-06 01:11:04,661 - commons.restbase.ResponseBase -INFO - Constructing ResponseBase
+2023-12-06 01:11:04,661 - commons.restbase.ResponseBase -INFO - Creating ResponseSpecBuilder
+2023-12-06 01:11:04,662 - commons.restbase.ResponseBase -INFO - Returning ResponseSpecification
+2023-12-06 01:11:04,662 - com.spotify.steps.PlaylistsSteps -INFO - Constructing PlaylistsSteps
+2023-12-06 01:11:04,662 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,663 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'application/json'
+2023-12-06 01:11:04,663 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,663 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'invalid_access_token'
+2023-12-06 01:11:04,663 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,664 - com.spotify.steps.PojoInitializer -INFO - Returning Request Playlists object that represents the data in the JSON file 'src/test/resources/test-data/CreatePlaylists.json'
+2023-12-06 01:11:04,667 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,670 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,670 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'users/{{user_id}}/playlists'
+2023-12-06 01:11:04,670 - commons.properties.PropertiesManager -INFO - Returning Property of 'user_id' as string
+2023-12-06 01:11:04,670 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,728 - commons.restbase.RequestBase -INFO - Reset RequestSpecification
+2023-12-06 01:11:04,730 - com.spotify.steps.PojoInitializer -INFO - Returning Response ErrorRoot object represents the data in the response
+2023-12-06 01:11:04,732 - com.spotify.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
+2023-12-06 01:11:04,737 - com.spotify.steps.Hooks -INFO - XXXXXXXXXX START TEST SCENARIO XXXXXXXXXX
+2023-12-06 01:11:04,737 - com.spotify.steps.Hooks -INFO - Scenario: Verify create Playlists with invalid Access Token
+2023-12-06 01:11:04,737 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,737 - commons.properties.PropertiesManager -INFO - Returning Property of 'api.base.uri' as string
+2023-12-06 01:11:04,737 - commons.restbase.RequestBase -INFO - Constructing RequestBase with baseUri: 'https://api.spotify.com/v1'
+2023-12-06 01:11:04,738 - commons.restbase.ResponseBase -INFO - Constructing ResponseBase
+2023-12-06 01:11:04,738 - commons.restbase.ResponseBase -INFO - Creating ResponseSpecBuilder
+2023-12-06 01:11:04,738 - commons.restbase.ResponseBase -INFO - Returning ResponseSpecification
+2023-12-06 01:11:04,739 - com.spotify.steps.PlaylistsSteps -INFO - Constructing PlaylistsSteps
+2023-12-06 01:11:04,739 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,739 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'application/json'
+2023-12-06 01:11:04,739 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,739 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: '{{expired.access.token}}'
+2023-12-06 01:11:04,740 - commons.properties.PropertiesManager -INFO - Returning Property of 'expired.access.token' as string
+2023-12-06 01:11:04,740 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,742 - com.spotify.steps.PojoInitializer -INFO - Returning Request Playlists object that represents the data in the JSON file 'src/test/resources/test-data/CreatePlaylists.json'
+2023-12-06 01:11:04,749 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,752 - com.spotify.config.ConfigLoader -INFO - Returning instance of ConfigLoader
+2023-12-06 01:11:04,753 - com.spotify.config.ConfigLoader -INFO - Replacing placeholders with properties: 'users/{{user_id}}/playlists'
+2023-12-06 01:11:04,753 - commons.properties.PropertiesManager -INFO - Returning Property of 'user_id' as string
+2023-12-06 01:11:04,754 - commons.restbase.RequestBase -INFO - Returning RequestSpecification
+2023-12-06 01:11:04,814 - commons.restbase.RequestBase -INFO - Reset RequestSpecification
+2023-12-06 01:11:04,816 - com.spotify.steps.PojoInitializer -INFO - Returning Response ErrorRoot object represents the data in the response
+2023-12-06 01:11:04,818 - com.spotify.steps.Hooks -INFO - XXXXXXXXXX END TEST SCENARIO XXXXXXXXXX
