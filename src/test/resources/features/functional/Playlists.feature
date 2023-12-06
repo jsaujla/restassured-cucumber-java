@@ -31,7 +31,7 @@ Feature: Playlists
       | Updated Playlist | Updated playlist description | false  |
     When User makes a PUT request to endpoint: "playlists/{playlist_id_from_post_request}"
     Then Response status code should be: 200
-
+    
     When With request headers
       | Content-Type     | Authorization  |
       | application/json | {access_token} |
